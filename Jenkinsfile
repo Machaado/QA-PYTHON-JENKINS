@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Executar testes') {
             steps {
-                bat 'pytest ./tests/test_login.py --html=report.html --self-contained-html'
+                bat 'mkdir relatorios && pytest ./tests/test_login.py --html=relatorios/report.html --self-contained-html'
             }
         }
     }
