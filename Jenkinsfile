@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Instalar dependências') {
             steps {
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
         stage('Executar testes') {
             steps {
-                sh 'pytest ./tests/test_login.py --html=report.html --self-contained-html'
+                bat 'pytest ./tests/test_login.py --html=report.html --self-contained-html'
             }
         }
     }
