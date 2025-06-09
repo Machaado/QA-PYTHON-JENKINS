@@ -23,7 +23,7 @@ def test_validar_produto_carrinho(driver, usuario, senha, nome_produto):
     time.sleep(1)
     ####
 
-    #####
+    ####
     produto.adicionar_produto_ao_carrinho(nome_produto)
     time.sleep(1)
 
