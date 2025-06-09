@@ -16,7 +16,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'report.html', fingerprint: true
+            archiveArtifacts artifacts: 'relatorios/report.html', fingerprint: true
         }
     }
 }
