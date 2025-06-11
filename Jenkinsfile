@@ -15,6 +15,8 @@ pipeline {
         stage('Executar testes') {
             steps {
                 bat 'pytest ./tests/test_login.py --html=relatorios/report.html --self-contained-html'
+                bat 'pytest ./tests/test_produto.py --html=relatorios/report.html --self-contained-html'
+                bat 'pytest ./tests/test_carrinho.py --html=relatorios/report.html --self-contained-html'
             }
         }
     }
