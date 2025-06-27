@@ -9,6 +9,7 @@ import time
 ])
 
 def test_adicionar_produto(driver, usuario, senha, nome_produto):
+    """Deve permitir que adicione itens ao carrinho e verificar se apareceu a notificação de 1 item adicionado ao carrinho"""
     login = LoginPage(driver)
     produto = ProdutoPage(driver)
 

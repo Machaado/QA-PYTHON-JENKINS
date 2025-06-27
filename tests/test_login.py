@@ -7,6 +7,7 @@ import time
 ])
 
 def test_login_sucesso(driver, usuario, senha):
+    """Deve permitir fazer login com credenciais válidas"""
     login = LoginPage(driver)
 
     login.preencherUsuario(usuario)
@@ -28,6 +29,7 @@ def test_login_sucesso(driver, usuario, senha):
 ])
 
 def test_login_falha(driver, usuario, senha):
+    """Deve não permitir o usuário logar com credenciais inválidas"""
     login = LoginPage(driver)
 
     login.preencherUsuario(usuario)

@@ -10,6 +10,7 @@ import time
 ])
 
 def test_validar_produto_carrinho(driver, usuario, senha, nome_produto):
+    """Deve logar, adicionar item ao carrinho, abrir o carrinho e verificar se o produto adicionado se encontra lá"""
     login = LoginPage(driver)
     produto = ProdutoPage(driver)
     carrinho = CarrinhoPage(driver)
