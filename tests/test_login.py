@@ -21,7 +21,7 @@ def test_login_sucesso(driver, usuario, senha):
     msg = login.verificarLoginS()
     assert "/inventory.html" in driver.current_url
     assert "Products" in msg
-    time.sleep(2)
+    #time.sleep(2)
 
 
 @pytest.mark.parametrize("usuario, senha", [
